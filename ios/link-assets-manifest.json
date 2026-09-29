@@ -1,0 +1,17 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/medium.ttf",
+      "sha1": "b95c7b1d3a5130d2d87e86f91eb397a428b4ba43"
+    },
+    {
+      "path": "assets/fonts/regular.ttf",
+      "sha1": "943c38fa3c44e48acc89c9547e30dc57991cb150"
+    },
+    {
+      "path": "assets/fonts/semibold.ttf",
+      "sha1": "d118e3c6fd7618bd7b36072336e5710871c99cc0"
+    }
+  ]
+}

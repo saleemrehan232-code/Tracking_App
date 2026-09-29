@@ -1,0 +1,61 @@
+import * as React from "react"
+import { View } from "react-native"
+import { Circle, Defs, Image, Path, Pattern, Svg, Use } from "react-native-svg"
+const AttandanceLogo = (props) => (
+    <View>
+        <Svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            width={98}
+            height={98}
+            fill="none"
+            {...props}
+        >
+            <Path
+                fill="#232323"
+                d="M25.23 38.127c.593 0 1.107.113 1.54.34.433.22.8.546 1.1.98l-.72.69c-.253-.387-.54-.664-.86-.83-.313-.174-.687-.26-1.12-.26-.32 0-.583.043-.79.13-.207.086-.36.203-.46.35-.093.14-.14.3-.14.48 0 .206.07.386.21.54.147.153.417.273.81.36l1.34.3c.64.14 1.093.353 1.36.64.267.286.4.65.4 1.09 0 .406-.11.76-.33 1.06-.22.3-.527.53-.92.69-.387.16-.843.24-1.37.24-.467 0-.887-.06-1.26-.18s-.7-.284-.98-.49a2.9 2.9 0 0 1-.69-.71l.74-.74c.14.233.317.443.53.63.213.18.46.32.74.42.287.1.603.15.95.15.307 0 .57-.037.79-.11.227-.074.397-.18.51-.32.12-.147.18-.32.18-.52a.735.735 0 0 0-.2-.51c-.127-.147-.367-.26-.72-.34l-1.45-.33c-.4-.087-.73-.21-.99-.37a1.61 1.61 0 0 1-.58-.58 1.608 1.608 0 0 1-.19-.78c0-.374.1-.71.3-1.01.207-.307.503-.55.89-.73.387-.187.847-.28 1.38-.28Zm6.216 6.8c-.5 0-.94-.104-1.32-.31a2.2 2.2 0 0 1-.89-.89c-.207-.394-.31-.86-.31-1.4 0-.54.103-1.004.31-1.39.213-.394.507-.694.88-.9.373-.207.797-.31 1.27-.31.487 0 .9.1 1.24.3.34.2.6.473.78.82.18.346.27.74.27 1.18 0 .12-.003.233-.01.34-.007.106-.017.2-.03.28h-4.02v-.82h3.55l-.53.16c0-.454-.113-.8-.34-1.04-.227-.247-.537-.37-.93-.37-.287 0-.537.066-.75.2a1.265 1.265 0 0 0-.49.6c-.113.26-.17.58-.17.96 0 .373.06.69.18.95s.29.456.51.59c.22.133.48.2.78.2.333 0 .603-.064.81-.19.207-.127.37-.304.49-.53l.85.4c-.12.24-.283.45-.49.63a2.1 2.1 0 0 1-.72.4c-.28.093-.587.14-.92.14Zm3.581 2v-7.1h.95l.08 1.4-.14-.17c.08-.26.204-.49.37-.69.167-.2.374-.357.62-.47.254-.114.53-.17.83-.17.407 0 .777.103 1.11.31.334.206.597.503.79.89.194.38.29.843.29 1.39 0 .546-.1 1.016-.3 1.41-.193.386-.46.683-.8.89-.333.206-.706.31-1.12.31-.426 0-.79-.11-1.09-.33a1.858 1.858 0 0 1-.64-.86l.12-.17v3.36h-1.07Zm2.45-2.87c.434 0 .77-.154 1.01-.46.247-.307.37-.73.37-1.27s-.12-.964-.36-1.27c-.24-.314-.573-.47-1-.47-.28 0-.526.073-.74.22-.206.14-.37.34-.49.6-.113.253-.17.56-.17.92 0 .353.057.66.17.92.114.26.274.46.48.6.207.14.45.21.73.21Zm5.211-5.7v4.97c0 .246.064.426.19.54.134.113.31.17.53.17.18 0 .337-.027.47-.08.134-.06.257-.14.37-.24l.24.78a1.74 1.74 0 0 1-.57.32c-.22.073-.466.11-.74.11-.286 0-.55-.047-.79-.14a1.139 1.139 0 0 1-.56-.45c-.133-.214-.203-.49-.21-.83v-4.85l1.07-.3Zm1.72 1.47v.84h-3.75v-.84h3.75Zm3.259 5.1c-.5 0-.94-.104-1.32-.31a2.201 2.201 0 0 1-.89-.89c-.207-.394-.31-.86-.31-1.4 0-.54.103-1.004.31-1.39.213-.394.506-.694.88-.9.373-.207.796-.31 1.27-.31.486 0 .9.1 1.24.3.34.2.6.473.78.82.18.346.27.74.27 1.18 0 .12-.004.233-.01.34-.007.106-.017.2-.03.28h-4.02v-.82h3.55l-.53.16c0-.454-.114-.8-.34-1.04-.227-.247-.537-.37-.93-.37-.287 0-.537.066-.75.2a1.265 1.265 0 0 0-.49.6c-.114.26-.17.58-.17.96 0 .373.06.69.18.95s.29.456.51.59c.22.133.48.2.78.2.333 0 .603-.064.81-.19.206-.127.37-.304.49-.53l.85.4c-.12.24-.284.45-.49.63a2.1 2.1 0 0 1-.72.4c-.28.093-.587.14-.92.14Zm3.581-.1v-5h.95l.05.84a1.69 1.69 0 0 1 .69-.71c.293-.154.603-.23.93-.23.36 0 .69.083.99.25.307.16.537.403.69.73.107-.22.253-.404.44-.55.187-.147.393-.254.62-.32.227-.074.45-.11.67-.11.32 0 .62.066.9.2.28.133.507.336.68.61.173.273.26.623.26 1.05v3.24h-1.07v-3.07c0-.407-.097-.7-.29-.88-.193-.18-.44-.27-.74-.27-.233 0-.45.056-.65.17-.193.113-.35.283-.47.51-.12.22-.18.493-.18.82v2.72h-1.07v-3.07c0-.407-.097-.7-.29-.88-.193-.18-.44-.27-.74-.27a1.285 1.285 0 0 0-1.1.66c-.133.226-.2.526-.2.9v2.66h-1.07Zm12.172.1c-.293 0-.563-.057-.81-.17a1.764 1.764 0 0 1-.61-.47 2.094 2.094 0 0 1-.37-.69l.13-.17-.08 1.4h-.94v-7.25h1.07v3.51l-.12-.17c.127-.347.343-.63.65-.85.307-.227.677-.34 1.11-.34.4 0 .767.103 1.1.31.34.206.607.503.8.89.194.386.29.856.29 1.41 0 .54-.1 1.003-.3 1.39-.193.386-.46.683-.8.89-.333.206-.707.31-1.12.31Zm-.23-.86c.434 0 .77-.154 1.01-.46.247-.314.37-.74.37-1.28s-.12-.964-.36-1.27c-.24-.307-.576-.46-1.01-.46-.28 0-.523.073-.73.22-.206.14-.37.34-.49.6-.113.26-.17.57-.17.93 0 .353.057.66.17.92.114.253.274.45.48.59.213.14.457.21.73.21Zm6.02.86c-.5 0-.94-.104-1.32-.31a2.2 2.2 0 0 1-.89-.89c-.207-.394-.31-.86-.31-1.4 0-.54.103-1.004.31-1.39.213-.394.506-.694.88-.9.373-.207.796-.31 1.27-.31.486 0 .9.1 1.24.3.34.2.6.473.78.82.18.346.27.74.27 1.18 0 .12-.004.233-.01.34-.007.106-.017.2-.03.28h-4.02v-.82h3.55l-.53.16c0-.454-.114-.8-.34-1.04-.227-.247-.537-.37-.93-.37-.287 0-.537.066-.75.2a1.265 1.265 0 0 0-.49.6c-.114.26-.17.58-.17.96 0 .373.06.69.18.95s.29.456.51.59c.22.133.48.2.78.2.333 0 .603-.064.81-.19.206-.127.37-.304.49-.53l.85.4c-.12.24-.284.45-.49.63a2.1 2.1 0 0 1-.72.4c-.28.093-.587.14-.92.14Zm3.58-.1v-5h.91l.1.9c.134-.327.33-.574.59-.74.268-.174.594-.26.98-.26.1 0 .2.01.3.03.1.013.184.036.25.07l-.15.94a1.244 1.244 0 0 0-.25-.06 1.681 1.681 0 0 0-.36-.03c-.206 0-.41.056-.61.17-.2.106-.366.27-.5.49-.126.22-.19.5-.19.84v2.65h-1.07ZM37.55 58.827v-.68l2.85-2.75c.254-.24.44-.45.56-.63a1.704 1.704 0 0 0 .32-.97c0-.36-.126-.644-.38-.85-.253-.207-.623-.31-1.11-.31-.373 0-.71.063-1.01.19-.3.12-.56.31-.78.57l-.68-.59c.267-.34.624-.6 1.07-.78.454-.187.95-.28 1.49-.28.487 0 .91.08 1.27.24.36.153.637.376.83.67.2.293.3.64.3 1.04 0 .226-.03.45-.09.67-.06.22-.173.453-.34.7a5.6 5.6 0 0 1-.72.83l-2.54 2.45-.24-.39h4.23v.87h-5.03Zm8.703.08a2.65 2.65 0 0 1-1.47-.42c-.427-.28-.767-.687-1.02-1.22-.247-.534-.37-1.18-.37-1.94s.123-1.407.37-1.94c.253-.534.593-.94 1.02-1.22a2.65 2.65 0 0 1 1.47-.42c.54 0 1.027.14 1.46.42.433.28.773.686 1.02 1.22.247.533.37 1.18.37 1.94s-.123 1.406-.37 1.94c-.247.533-.587.94-1.02 1.22-.433.28-.92.42-1.46.42Zm0-.89c.367 0 .687-.1.96-.3.28-.2.497-.5.65-.9.16-.4.24-.897.24-1.49 0-.594-.08-1.09-.24-1.49-.153-.4-.37-.7-.65-.9-.273-.2-.593-.3-.96-.3s-.69.1-.97.3c-.28.2-.5.5-.66.9-.153.4-.23.896-.23 1.49 0 .593.077 1.09.23 1.49.16.4.38.7.66.9.28.2.603.3.97.3Zm3.7.81v-.68l2.85-2.75c.253-.24.44-.45.56-.63a1.701 1.701 0 0 0 .32-.97c0-.36-.127-.644-.38-.85-.253-.207-.623-.31-1.11-.31-.373 0-.71.063-1.01.19-.3.12-.56.31-.78.57l-.68-.59c.267-.34.623-.6 1.07-.78.453-.187.95-.28 1.49-.28.487 0 .91.08 1.27.24.36.153.637.376.83.67.2.293.3.64.3 1.04 0 .226-.03.45-.09.67a2.4 2.4 0 0 1-.34.7 5.6 5.6 0 0 1-.72.83l-2.54 2.45-.24-.39h4.23v.87h-5.03Zm5.557-1.72v-.7l3.58-4.58h1.08l-3.55 4.58-.51-.16h5.59v.86h-6.19Zm3.89 1.72v-1.72l.03-.86v-1.52h.94v4.1h-.97Z"
+            />
+            <Circle
+                cx={49.201}
+                cy={49}
+                r={42.693}
+                stroke="#1DCF6F"
+                strokeWidth={10.96}
+            />
+            <Path fill="url(#a)" d="M2 57.799h63.5v39H2z" />
+            <Path fill="url(#b)" d="M0 15.799h21.5v45.5H0z" />
+            <Defs>
+                <Pattern
+                    id="a"
+                    width={1}
+                    height={1}
+                    patternContentUnits="objectBoundingBox"
+                >
+                    <Use xlinkHref="#c" transform="scale(.00787 .01282)" />
+                </Pattern>
+                <Pattern
+                    id="b"
+                    width={1}
+                    height={1}
+                    patternContentUnits="objectBoundingBox"
+                >
+                    <Use xlinkHref="#d" transform="scale(.02326 .01099)" />
+                </Pattern>
+                <Image
+                    xlinkHref="data:image/png;base64,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"
+                    id="c"
+                    width={127}
+                    height={78}
+                />
+                <Image
+                    xlinkHref="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAABbCAYAAADqf3wBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARbSURBVHgB7ZpRbttGEIb/JQW0QF98gCKm3lq7QHOD0ico0wvEPkGbEyQ5QdITVD2BNycwc4IoQJQEyIMJJ8hr/JAEQWJyM0tRyoqSqCU5Q8BAvhdBFGF8Hs7MLncXGJCL5PDBefJLhI4EGIjXyW936eOfEOHZeXJwEx1QGAAramDuOZcuc5ijsX4+RQvEZd/cOrxdGEw2/RYoHP98OvsfnojK2vwMMXoCmL1t9xgUd/b1i4fwQCxn56LhWZOoRSF48Do5uAsPxGRHCE/pI/K510Dd8xEWkZ0XFFpVvI8we85SWzoOof5Ddx7e0LM7m35glf2Wp36Pv4EJCZ/UL7KmAYnaiEboz/FFcnB6ntxcKU422WqEisGGSgJ8OXOFWdKgevznkCHLkdNo9zJjkaUJihWNIEcp3DsN6PH/DVlRS1m4vSLLWP1e9IosidqiijAANGu73zmy9Phj+gNnGASlb+hntzpHlkT7jFJtoOJ6Xw4QnWTtkIphHn/VtrJL+6WTLI39XlO6vuRQJ7a/Lr6P0JKhomoLaqxnqXutVYEN2KpSmsgc1S+2TIMghryozdOTTT+0kh0mV+3j/5anLt6yA+UqzWOfT7b96C0rH1VFawn5/aY7vGSHiKppePwLvGQpqrchS7avZzvXDnbKVgtpMQTJaaHD576dstXMShCjx/qF9rnTJw1iCOIbVUuj7ACFNdlVVC6NsiHwJwTZ1arqbJWdF5ZKIEerqFoaIhvEEISi6r0uu2CrrGRvpUW7KUU1RUs2ylarIDGEUDD/ogMbZUPkMeTImiYrTWxJg0KyC6ToyLacjSFEjs+dUsCyJlvtUUWQIRvrV622k1yC9QsqhhA0DXyEHqzJUqX+ASEKfJmgBxtyViyyvVLAsiJb5eseZEjRkxVZmrtGEIKmgr3y1bIia0QHgx9S9GRFVkH9DhnSsZ5eoif1Aut0DmAX1LKegoGlbDV5ESmuAiYFA0vZEa5EojrH9GpZC5ay9N9LyV62fSPYhpOzRqq/skTVspSlhVqRTsBVXBYnskoosiYDE27riiBAwVRcFnFZGmh7DwYLStn6vj4vP2VgoorsJzFZjmF2QSUbSMlmYKSUHQnJ0mIGW1QtogcnlYSsEeuxvJSytEh2fWSvC99lpbh+stRnM1wDpCMbgZFS9goFa/OWooqsmGwERirZH8Uiyzn9LGU5p3HrfIjAhFtgGUQYRWDCfbsViW7AmLfOIkfB9sq8iorAhPsqLhJZzpVJJ7J8Kyc12JalnMiKDbl7b//6dR8MOLIjqcjiqlBHYGApW/Vakbw1TKlQn8iIRJeryGobIEaofSHmGHZXzs/ajhCCC9sKzZTenB8XTBsgtcO+RVoe4+mIKdPIkFyggffTxfFnLtYO+14kh+/gvxGS2c3jeY/+qLnl6mw4Rm13VradOiofraYIPi2Qa669Al/WZG2OUbgTR47yDo/s9tBYz8R6sQ9rsjZiAYJIKu/68BVxnHHO3WqeRQAAAABJRU5ErkJggg=="
+                    id="d"
+                    width={43}
+                    height={91}
+                />
+            </Defs>
+        </Svg>
+    </View>
+
+)
+export default AttandanceLogo
